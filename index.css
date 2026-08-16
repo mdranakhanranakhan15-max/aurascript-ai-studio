@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Minimalist Text UI Hover stabilization */
+  .minimal-float-item {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Custom subtle scrollbar for text areas */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(123, 156, 255, 0.2);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(123, 156, 255, 0.5);
+  }
+}
